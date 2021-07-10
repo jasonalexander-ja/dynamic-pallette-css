@@ -1,0 +1,17 @@
+.nav-bar {
+    position: fixed;
+    min-width: 100vw;
+    flex-shrink: 0;
+    flex-grow: 1;
+    min-height: var(--nav-bar-height);
+    background-color: var(--secondary-color);
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    align-content: center;
+}
+.nav-bar > * {
+    padding: 0px 3px 0px 3px;
+    font-family: var(--font-family);
+    color: var(--primary-color);
+}

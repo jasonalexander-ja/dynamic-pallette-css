@@ -1,0 +1,12 @@
+@import 'baseline-theme.scss';
+
+@mixin secondary-theme {
+    @include baseline-theme();
+    --bg-color: yellow;
+    --primary-color: yellow;
+    --secondary-color: slategrey;
+    --font-color: white;
+    --font-family: Verdana, Geneva, Tahoma, sans-serif;
+    --font-weight: 500;
+    --nav-bar-height: 60px;
+}

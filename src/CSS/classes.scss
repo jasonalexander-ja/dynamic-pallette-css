@@ -1,0 +1,22 @@
+button {
+    border: 0px;
+    border-radius: 0px;
+    margin: 0px 3px 0px 3px;
+    color: var(--font-color);
+    font-weight: var(--font-weight);
+    background-color: var(--secondary-color);
+    font-family: var(--font-family);
+    font-size: 40px;
+}
+.app {
+    background-color: var(--bg-color);
+    height: 100vh;
+}
+.content {
+    width: 100%;
+    height: calc(100% - var(--nav-bar-height));
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: var(--nav-bar-height);
+}
