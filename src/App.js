@@ -18,7 +18,7 @@ export const App = () => {
 		<Router>
 			<div 
 				className="app" 
-				id="App" 
+				id="app" 
 				value={theme}
 			>
 				<NavBar>
