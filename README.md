@@ -34,23 +34,23 @@ In `src\App.js`;
 export const App = () => {
     const [theme, setTheme] = useState("mainTheme");
     return (
-        <Router>
-			<div 
-				id="theme-provider" 
-				value={theme}
-			>
-                <Link to="/home">Home</Link>
-                <Link to="/other">Other</Link>
-				<Switch>
-    				<Route path="/home">
-    					<HomeApp setTheme={setTheme} />
-    				</Route>
-    				<Route path="/other">
-    					<OtherApp setTheme={setTheme} />
-    				</Route>
-    			</Switch>
-			</div>
-        <Router>
+	<Router>
+		<div 
+			id="theme-provider" 
+			value={theme}
+		>
+		<Link to="/home">Home</Link>
+		<Link to="/other">Other</Link>
+			<Switch>
+				<Route path="/home">
+					<HomeApp setTheme={setTheme} />
+				</Route>
+				<Route path="/other">
+					<OtherApp setTheme={setTheme} />
+				</Route>
+			</Switch>
+		</div>
+	<Router>
     );
 ```
 
