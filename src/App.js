@@ -18,7 +18,7 @@ export const App = () => {
 		<Router>
 			<div 
 				id="theme-provider" 
-				value={theme}
+				className={theme}
 			>
 				<NavBar>
 					<Link to="/home">Home</Link>

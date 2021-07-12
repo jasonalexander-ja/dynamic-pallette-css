@@ -1,8 +1,8 @@
 @import 'Theme/main-theme.scss', 'Theme/secondary-theme.scss';
 
-#theme-provider[value="mainTheme"] {
+#theme-provider.mainTheme {
     @include main-theme;
 }
-#theme-provider[value="secondaryTheme"] {
+#theme-provider.secondaryTheme {
     @include secondary-theme;
 }
