@@ -68,3 +68,32 @@ export const HomeApp = props => {
 ```
 
 The amount of JavaScript being used could be reduced even further by simply using using `document.getElementById` to change the className of the `#theme-provider` component, which ever should be used is purely for your discression.
+
+## Setting dark mode
+
+Setting dark mode is simple; in your theme, just use the parent selector `&` for a child class called `dark`, within this child class you can overide the colour variables: 
+
+```scss
+@mixin main-theme {
+    @include baseline-theme();
+
+    --bg-color: slategrey;
+    --primary-color: slategrey;
+    --secondary-color: yellow;
+    --font-color: black;
+    &.dark {
+        --bg-color: black;
+        --primary-color: yellow;
+        --secondary-color: slategrey;
+        --font-color: white;
+    }
+}
+```
+
+You can then append `dark` to the className of the `#theme-provider`, this will cause the dark colours to be used instead:
+
+```JSX
+const HomeApp = props => {
+	props.setTheme('mainTheme dark');
+	...
+```
