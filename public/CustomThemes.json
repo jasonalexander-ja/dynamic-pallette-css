@@ -1,0 +1,20 @@
+{
+    "values": {
+        "normal": [
+            { "key": "--bg-color", "value": "white" },
+            { "key": "--primary-color", "value": "teal" },
+            { "key": "--secondary-color", "value": "slategrey" },
+            { "key": "--font-color", "value": "black" },
+            { "key": "--font-family", "value": "Arial, Helvetica, sans-serif" },
+            { "key": "--font-weight", "value": "600" }
+        ],
+        "dark": [
+            { "key": "--bg-color", "value": "black" },
+            { "key": "--primary-color", "value": "black" },
+            { "key": "--secondary-color", "value": "white" },
+            { "key": "--font-color", "value": "black" },
+            { "key": "--font-family", "value": "Arial, Helvetica, sans-serif" },
+            { "key": "--font-weight", "value": "600" }
+        ]
+    }
+}
